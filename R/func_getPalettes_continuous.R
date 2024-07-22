@@ -31,9 +31,8 @@ func_getPalettes_continuous = function(index_floor = "blue3",
   library(RColorBrewer)
   library(circlize)
   ##获取连续调色盘
-  continuousPalette = colorRamp2(
-    c(color_floor, color_middle, color_celling),
-    c(index_floor, index_middle, index_celling)
+  continuousPalette = colorRamp2(breaks = c(index_floor, index_middle, index_celling),
+                                 colors = c(color_floor, color_middle, color_celling)
   )
   return(continuousPalette)
 }
