@@ -1,0 +1,14 @@
+Package: vulcan
+Title: Vulcan: A Simple Bioinformatics Analysis Toolkit.
+Version: 1.0.0
+Authors@R: 
+    person("Haokun", "Chen", , "haokunR1995@163.com", role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Encapsulated a multitude of commonly used tool functions and data in the bioinformatics analysis process, such as annotation information, commonly used file information, etc. With each version update, new content will continuously be added..
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports:
+  tidyverse, data.table, knitr, txdbmaker, GenomicFeatures, DGEobj.utils, AnnoProbe, RColorBrewer, circlize
