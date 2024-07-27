@@ -1,8 +1,9 @@
-
 #' @title Obtain a discrete color palette.
-#'  @description
+#'
+#' @description
 #'  Based on the RColorBrewer and circlize packages, conveniently obtain a continuous color palette for a range of numerical values.
 #'  - The function includes a package loading process, utilizing the CRAN mirror from the University of Science and Technology of China for network optimization.
+#'  - UPDATE:2024-7-26 15:22:59
 #' @param legendPath
 #' By default, a log folder is created in the working directory to store the legend. You can customize the save folder or specify it as NULL (to output to the console).
 #' - You can directly obtain the legend from my server: https://haokun-img-storage-1302331098.cos.ap-chengdu.myqcloud.com/img/discrete_palette.png.
@@ -10,7 +11,7 @@
 #' @export
 #'
 #' @examples donttest{}
-func_getPalettes_discrete = function(legendPath = "./log"){
+func_getPalettes_discrete = function(legendPath = NULL){
   options("repos" = c(CRAN="https://mirrors.ustc.edu.cn/CRAN/"))
   options(BioC_mirror="https://mirrors.ustc.edu.cn/bioc/")
   pkg = c("RColorBrewer", "circlize")

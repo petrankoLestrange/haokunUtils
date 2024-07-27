@@ -2,14 +2,9 @@
 % Please edit documentation in R/func_getPalettes_discrete_.R
 \name{func_getPalettes_discrete}
 \alias{func_getPalettes_discrete}
-\title{Obtain a discrete color palette.
-@description
-Based on the RColorBrewer and circlize packages, conveniently obtain a continuous color palette for a range of numerical values.
-\itemize{
-\item The function includes a package loading process, utilizing the CRAN mirror from the University of Science and Technology of China for network optimization.
-}}
+\title{Obtain a discrete color palette.}
 \usage{
-func_getPalettes_discrete(legendPath = "./log")
+func_getPalettes_discrete(legendPath = NULL)
 }
 \arguments{
 \item{legendPath}{By default, a log folder is created in the working directory to store the legend. You can customize the save folder or specify it as NULL (to output to the console).
@@ -21,11 +16,10 @@ func_getPalettes_discrete(legendPath = "./log")
 A character vector including 74 types of color.
 }
 \description{
-Obtain a discrete color palette.
-@description
 Based on the RColorBrewer and circlize packages, conveniently obtain a continuous color palette for a range of numerical values.
 \itemize{
 \item The function includes a package loading process, utilizing the CRAN mirror from the University of Science and Technology of China for network optimization.
+\item UPDATE:2024-7-26 15:22:59
 }
 }
 \examples{

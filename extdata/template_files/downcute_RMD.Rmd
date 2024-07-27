@@ -1,0 +1,63 @@
+---
+title: "title here"
+author: "author here" #"`r format(Sys.time(), '%d %B, %Y')`" #"Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+date: "date here"
+output:
+  rmdformats::downcute: 
+    self_contained: true
+    thumbnails: false
+    lightbox: true
+    gallery: false
+    toc_depth: 2
+    highlight: haddock
+    default_style: light
+    downcute_theme: chaos
+---
+
+```{r setup, include=FALSE}
+# Global configuration
+## 【eval】控制RMD是否运行代码块
+### T(运行)，F（不运行）
+knitr::opts_chunk$set(eval = TRUE)
+
+## 【echo】控制RMD是否显示代码块(会展示代码结果)
+### T(显示)，F(不显示)
+knitr::opts_chunk$set(echo = TRUE)
+
+## 【result】控制RMD是否/如何展示文本
+### 四个选项：
+#### markup(默认，修饰后输出)、asis(允许使用代码模拟RMD语法)
+#### hold(收集代码块运行过程中所有文本，并在最后输出)、hide(隐藏文本输出)
+knitr::opts_chunk$set(result = "hide")
+
+## 【include】控制RMD是否隐藏该代码块及其所有输出(不影响运行)
+### T(不隐藏), F(隐藏)
+knitr::opts_chunk$set(include = TRUE)
+
+## 【warning/message】控制RMD是否展示warning/message结果
+### T(展示), F(不展示)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(message  = FALSE) 
+## 【error】控制RMD在发生error时，是否继续执行code
+### T(继续执行), F(不继续执行)
+knitr::opts_chunk$set(error  = FALSE) 
+
+## 【fig.show】控制RMD是否/如何展示图片
+### 四个选项：
+#### asis(默认，图片展示在生成它的代码位置)、hold(图片生成在代码块的末尾)
+#### hide(隐藏图片输出)、animate(将生成的多幅图片转换成动画)
+knitr::opts_chunk$set(fig.show  = "hide") 
+
+## 【fig.height/fig.width】控制图片输出的物理大小
+## 【fig.height/fig.width】控制图片输出在最终文件里的显示大小（指定百分比）
+knitr::opts_chunk$set(fig.height = 8, fig.width = 8)
+knitr::opts_chunk$set(out.height = "100%", out.width = "100%")
+```
+
+# 一、
+
+## (一)
+
+### (1)
+
+#### 1)

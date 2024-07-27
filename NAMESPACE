@@ -3,3 +3,6 @@
 export(func_count2tpm)
 export(func_getPalettes_continuous)
 export(func_getPalettes_discrete)
+export(func_install)
+export(generate_RMarkdown)
+export(generate_main_script)
