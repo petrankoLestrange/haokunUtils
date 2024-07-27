@@ -23,7 +23,8 @@ packages.CRAN =
     #"tinytex",
     "knitr",
     "rmdformats",
-    "rticles"
+    "rticles",
+    "kableExtra"
     )
 for (pkg in packages.CRAN){
   #先检查环境中是否存在该包，没有的话则安装
