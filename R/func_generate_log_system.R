@@ -7,7 +7,7 @@
 func_generate_log_system = function(){
   library(data.table)
   warning("将在当前项目根目录下，新建log_RMD、log文件夹及项目初始特性表")
-  template_path = system.file(paste0("./extdata/template_files/", "main_log.rmd"), package = "vulcan")
+  template_path = system.file("extdata", "template_files", "main_log.rmd", package = "vulcan")
   if (is.null(template_path) | template_path == "") {
     stop("Template file not found in package.")
   }

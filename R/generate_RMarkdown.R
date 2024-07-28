@@ -11,11 +11,11 @@
 #' @export
 #'
 #' @examples donttest{}
-generate_RMarkdown = function(type, target_path, overwrite = FALSE){
+func_generate_RMarkdown = function(type, target_path, overwrite = FALSE){
   if(!(type %in% c("downcute", "html_clean", "meterial", "readthedown", "robobook"))){
     stop("type need to take the following specified values: downcute, html_clean, meterial, readthedown, and robobook")
   }
-  template_path = system.file(paste0("./extdata/template_files/", type, "_RMD.rmd"), package = "vulcan")
+  template_path = system.file("extdata", "template_files", paste0(type, "RMD.rmd"), package = "vulcan")
   if (is.null(template_path) | template_path == "") {
     stop("Template file not found in package.")
   }

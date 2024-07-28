@@ -10,8 +10,8 @@
 #' @export
 #'
 #' @examples donttest{}
-generate_main_script = function(target_path, overwrite = FALSE){
-  template_path = system.file("./extdata/template_files/main_script.R", package = "vulcan")
+func_generate_main_script = function(target_path, overwrite = FALSE){
+  template_path = system.file("extdata", "template_files", "main_script.R", package = "vulcan")
   if (is.null(template_path) | template_path == "") {
     stop("Template file not found in package.")
   }
