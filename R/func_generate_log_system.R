@@ -1,7 +1,6 @@
 #' @title generate a log system for your project
 #'
 #' @return none.
-#' @export
 #'
 #' @examples donttest{}
 func_generate_log_system = function(){

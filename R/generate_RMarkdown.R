@@ -8,7 +8,6 @@
 #' @param overwrite Do you want to overwrite?
 #'
 #' @return file path
-#' @export
 #'
 #' @examples donttest{}
 func_generate_RMarkdown = function(type, target_path, overwrite = FALSE){

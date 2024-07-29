@@ -34,7 +34,7 @@ func_install = function(pkg_list, repos = c(CRAN="https://mirrors.ustc.edu.cn/CR
   }
   if(any(names(pkg_list) == "biocManager")){
     pkg = pkg_list["biocManager"]$biocManager
-    sapply(pkg_list, simplify = T, function(x){
+    sapply(pkg, simplify = T, function(x){
       if (! require(x,character.only=T) ) {
         BiocManager::install(x,ask = F,update = F)
         require(x,character.only=T)

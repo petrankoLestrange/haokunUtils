@@ -7,7 +7,6 @@
 #' @param overwrite Do you want to overwrite?
 #'
 #' @return target_path
-#' @export
 #'
 #' @examples donttest{}
 func_generate_main_script = function(target_path, overwrite = FALSE){
